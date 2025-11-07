@@ -1,1 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Syriac+Western:wght@100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif ;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #EAEAEA;
+}
+header{
+    height: 60px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    align-items: center;
+    display:inline-flex;
+    position: fixed;
+    z-index: 100;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:absolute;
+    bottom: 20px;
+    left: 60px;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right:20px;
+    font-weight: 520;
+    cursor:pointer;
+    font-family: Comic Neue;
+}
+nav ul li:hover{
+    transform: scale(1.1);
+    font-size: 17px;
+}
+
+.nav-bar a,
+.nav-bar a:visited,
+.nav-bar a:hover,
+.nav-bar a:active,
+.nav-bar a:focus {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+.logo{
+    font-size: 25px;
+    font-family: Nova Mono;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/cocktail2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0px;
+}
+.hero h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: Nova Mono;
+}
+.hero p{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: Montserrat Alternates;
+}
+.hero-section{
+    padding-top: 200px;
+}
+.search-box{
+    max-width: 850px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search-box ::placeholder{
+    padding-left: 20px;
+    font-family: Montserrat Alternates;
+}
+
+.search-box input{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+    border: none;
+    box-shadow:0 3px 3px black;
+    background-color: rgb(233, 206, 206);
+}
+.search-box button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    font-size: 1rem;
+    background-color: #800b19;
+    color: white;
+    cursor: pointer;
+    box-shadow:0 3px 3px black;
+
+}
+.Recipes{
+    padding: 50px 0;
+    background-color: #EAEAEA;
+}
+.Recipes>h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-family: Major Mono Display;
+}
+.recipe-section{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.recipe-section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.recipe-section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.recipe-section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.recipe-card{
+    background: white;
+    margin: 30px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 10px rgb(0,0,0, 0.1);
+    position: relative;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recipe-card:hover{
+    transform: scale(1.05); /* slight pop */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* enhance shadow */
+    z-index: 10;
+}
+.recipe-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.recipe-card h2{
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Momo Signature", cursive;
+    font-weight: normal;
+}
+.recipe-card h2 {
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.recipe-card h2:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+.recipe-card p{
+    font-size: 18px;
+    padding: 20px;
+    font-family: Montserrat Alternates;
+    text-align: center;
+}
+.recipe-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+    font-family: Comic Neue;  
+}
+.recipe-card a:hover{
+    text-decoration: underline;
+}
+footer{
+    background: #800b19;
+    padding: 30px 0;
+    color: #EAEAEA;
+    text-align: center;
+}
+.History{
+    margin-top: 30px;
+    background-color: #EAEAEA;
+}
+.History-section{
+    background-color: #fff;
+    margin: 0 50px 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 6px 6px;
+    text-align: center;
+    font-size: 18px;
+}
+.History h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-family: Major Mono Display;
+}
+.History p{
+    font-family: Montserrat Alternates;
+}
+.About-us>h2{
+    background: #800b19;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    font-family: Major Mono Display;
+}
+.About-us-section{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 0 50px 50px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 6px 6px;
+    margin-top: 30px;
+}
+.About-us-section h3{
+    font-size: 26px;
+    padding: 20px;
+    text-align: center;
+    font-family: unit-slab, Georgia, Times, serif;
+    font-weight: normal;
+}
+.About-us-section p{
+    font-family: Montserrat Alternates;
+}
+span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#parent-company {
+    cursor:no-drop;
+}
